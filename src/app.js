@@ -17,4 +17,6 @@ app.get('/', (req, res)=>{
 
 io.of('/stream').on('connection', stream);
 
-server.listen(3000);
+app.listen(port, () => {
+    console.log(`listening to the port no at ${port}`);
+})
